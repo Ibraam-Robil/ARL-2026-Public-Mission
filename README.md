@@ -1,5 +1,5 @@
-# ARL-2024-Mission
-Mission for the ARL 2025 Autonomous Mobile Robots and Automated Driving Systems Workshop
+# ARL-2026-Mission
+Mission for the ARL 2026 Autonomous Mobile Robots and Automated Driving Systems Workshop
 
 ## Contents
 - Coding Assignments
