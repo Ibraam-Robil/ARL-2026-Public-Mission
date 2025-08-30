@@ -6,12 +6,12 @@ Mission for the ARL 2026 Autonomous Mobile Robots and Automated Driving Systems 
     - Coding Assignment 1: Lane_Maneuvers
     - Coding Assignment 2: Sensor_Fusion
 - Debnugging Assignment
-- Simple Questions: Easy Questions for interviewees to read about and discuss in different topics
+- Simple Questions: 
     1. Perception
     2. State Estimation
     3. Motion Planning
     4. Control
-- Literature Reading: Contains a publication for interviewees to read, answer questions about in the mission and discuss during the interview
+- Literature Reading
 
 ## Enquiries
 If you have any enquiries regarding the mission, feel free to send an e-mail to ahmedkhalifa1999@gmail.com
