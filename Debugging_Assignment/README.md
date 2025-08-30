@@ -38,11 +38,11 @@ The file contains **three levels of bugs**, each tied to a specific concept or a
 
 - **Level 3 – Rotation Matrix Transformation**  
   Mistakes in implementing a 2D/3D rotation using linear algebra. 
-  *Algorithm / Concept:* **Rotation Matrix (Linear Algebra / Eigen Library)**  
+  *Algorithm / Concept:* **Rotation Matrix (Linear Algebra / Eigen)**  
   
 
 The purpose of the task is not just to fix the code, but to **understand each bug, document your solution, and explain the reasoning**.  
-This ensures you gain both **debugging skills** and a deeper understanding of **C++ programming, algorithms, and libraries like Eigen**.  
+This ensures you gain both **debugging skills** and a deeper understanding of **C++ programming, algorithms, and libraries**.  
 
 
 ## 📦 What to Submit (Required)
