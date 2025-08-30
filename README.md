@@ -5,7 +5,7 @@ Mission for the ARL 2026 Autonomous Mobile Robots and Automated Driving Systems 
 - Coding Assignments
     - Coding Assignment 1: Lane_Maneuvers
     - Coding Assignment 2: Sensor_Fusion
-- Debnugging Assignment
+- Debugging Assignment
 - Simple Questions: 
     1. Perception
     2. State Estimation
