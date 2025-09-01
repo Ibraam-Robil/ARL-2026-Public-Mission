@@ -28,13 +28,13 @@
 #include <string>
 #include <vector>
 #include <cmath>
-
+#include <Eigen/Dense>
 
 using namespace std;
 
 string decodeMessage(int values[], int size) {
     string result = "";
-    for (int i = 0; i < size; i+ ) {   
+    for (int i = 0; i < size; i++) {   
         if (values[i] > 0) {
             result += char(values[i]);
         }
@@ -42,19 +42,21 @@ string decodeMessage(int values[], int size) {
     return result;
 }
 
-Eigen: Vector3d applyRotation(double angle, Eigen: Vector3d point) {
-    Eigen: Matrix3d rotation;
-    rotation < cos(angle), sin(angle), 0,   / BUG: Wrong rotation matrix
-               -sin(angle), cos(angle), 0,
-                0,        0,        1;
+Eigen::Vector3d applyRotation(double angle, Eigen::Vector3d point) {
+    double scl = 0.5;
+    Eigen::Matrix3d rotation;
+    rotation << cos(angle)-scl,    -sin(angle),     0,  // BUG: Wrong rotation matrix
+                    sin(angle), cos(angle)-scl,     0,
+                             0,              0, 1-scl;
+
+    // cout << "Rotation Matrix:\n" << rotation * point << endl;
 
     return rotation * point;
 
-    CMakeList BUG
+    // CMakeList BUG
 }
 
-string extractName(Eigen: Vector3d result) {
-    
+string extractName(Eigen::Vector3d result) {
     int ascii_vals[3];
     ascii_vals[0] = int(round(abs(result.x())));
     ascii_vals[1] = int(round(abs(result.y())));
@@ -63,23 +65,23 @@ string extractName(Eigen: Vector3d result) {
 }
 
 int main() {
-    cout < "Autotronics Research Lab - Debug Challenge" < endl;
+    cout << "Autotronics Research Lab - Debug Challenge" << endl;
 
-    
-    cout < "Level 2 Test: ";
-    int simple_values[] = {65, 109, 105, 110, 32, 105, 115}; 
-    cout < decodeMessage(simple_values, 4) < endl;
+    cout << "Level 2 Test: ";
+    int simple_values[] = {65, 109, 105, 110, 32, 105, 115};
+    int length = sizeof(simple_values) / sizeof(simple_values[0]);
+    cout << decodeMessage(simple_values, length) << endl;
 
-    
-    cout < "Level 3 Test: ";
+    cout << "Level 3 Test: ";
+    // cout << "Level 3 Test: " << endl;
 
-    Eigen: Vector3d original_point(83.0, 97.0, 100.0);
+    Eigen::Vector3d original_point(83.0, 97.0, 100.0);
 
-    double rotation_angle = M_PI / 4.0;   / 45 degrees
+    double rotation_angle = M_PI / 4.0;   // 45 degrees
 
-    Eigen: Vector3d rotated = applyRotation(rotation_angle, original_point);
+    Eigen::Vector3d rotated = applyRotation(rotation_angle, original_point);
 
-    cout < extractName(rotated) < endl;
+    cout << extractName(rotated) << endl;
 
     return 0;
 }

@@ -6,4 +6,4 @@ find_package(Eigen3 REQUIRED)
 add_executable(debug_challenge main.cpp)
 
 # BUG: Missing target link libraries for Eigen
-# target_link_libraries(debug_challenge Eigen3: Eigen)
+target_link_libraries(debug_challenge Eigen3::Eigen)

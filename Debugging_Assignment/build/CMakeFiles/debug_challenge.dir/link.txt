@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/debug_challenge.dir/link.d CMakeFiles/debug_challenge.dir/main.cpp.o -o debug_challenge
