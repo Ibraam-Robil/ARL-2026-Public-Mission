@@ -78,7 +78,7 @@ fuse_readings(s1, s2, s3)
 
 # ▶️ How to Run
 
-1. Implement your function inside **`solution.py`**.  
+1. Implement your function inside **`question.py`**.  
 2. Run the test file with:
 
 ```bash
